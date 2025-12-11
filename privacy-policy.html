@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AppLock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        .warning {
+            background-color: #f8d7da;
+            padding: 15px;
+            border-left: 4px solid #dc3545;
+            margin: 20px 0;
+        }
+        .info {
+            background-color: #d1ecf1;
+            padding: 15px;
+            border-left: 4px solid #0c5460;
+            margin: 20px 0;
+        }
+        .last-updated {
+            text-align: right;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for AppLock</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> December 8, 2025</p>
+
+        <h2>1. Introduction</h2>
+        <p>AppLock ("we," "our," or "the app") is committed to protecting your privacy and ensuring transparency about how we handle your data. This Privacy Policy explains in detail how we collect, use, store, and safeguard information when you use our Android application.</p>
+        <p>By installing and using AppLock, you acknowledge that you have read, understood, and agree to the terms of this Privacy Policy. If you do not agree with any part of this policy, please do not use our application.</p>
+
+        <h2>2. Information We Collect</h2>
+        
+        <h3>2.1 Usage Statistics Permission (PACKAGE_USAGE_STATS)</h3>
+        <div class="info">
+            <p><strong>Status:</strong> Required for core functionality</p>
+        </div>
+        <p><strong>What We Collect:</strong></p>
+        <ul>
+            <li>App package names (e.g., "com.example.app") of applications installed on your device</li>
+            <li>Timestamps when apps are opened (MOVE_TO_FOREGROUND events)</li>
+            <li>Timestamps when apps are closed or moved to background (MOVE_TO_BACKGROUND events)</li>
+            <li>Duration of app usage (time spent in foreground)</li>
+            <li>Launch count (how many times each app was opened)</li>
+            <li>Foreground/background status of applications</li>
+            <li>Last time used for each application</li>
+        </ul>
+        <p><strong>Why We Need This:</strong></p>
+        <ul>
+            <li>To detect when protected apps are opened in real-time</li>
+            <li>To enforce app lock restrictions and show the lock screen</li>
+            <li>To provide usage statistics and insights (daily, weekly, monthly reports)</li>
+            <li>To implement time-based restrictions (daily usage limits)</li>
+            <li>To track app launch attempts for security purposes</li>
+            <li>To calculate screen time and usage patterns</li>
+        </ul>
+        <p><strong>How We Use This:</strong></p>
+        <ul>
+            <li>This data is stored <strong>locally on your device only</strong> in Android's DataStore</li>
+            <li>Used exclusively to determine when to show the lock screen</li>
+            <li>Used to calculate app usage time for restriction enforcement</li>
+            <li>Used to generate usage reports and statistics within the app</li>
+            <li><strong>Never transmitted to external servers</strong> unless you explicitly enable cloud backup features</li>
+            <li>Data is cached temporarily (10 minutes) for performance optimization</li>
+        </ul>
+
+        <h3>2.2 Accessibility Service</h3>
+        <div class="info">
+            <p><strong>Status:</strong> Recommended for enhanced security (especially on MIUI/Xiaomi devices)</p>
+        </div>
+        <p><strong>What We Collect:</strong></p>
+        <ul>
+            <li>Window state changes (which app is currently in the foreground)</li>
+            <li>App package names and window titles</li>
+            <li>Text input events (only when parental control features are enabled)</li>
+            <li>Window content changes (for detecting app launches)</li>
+        </ul>
+        <p><strong>Why We Need This:</strong></p>
+        <ul>
+            <li>To provide faster and more reliable app detection (especially on custom Android skins)</li>
+            <li>To enable real-time parental control text monitoring (optional feature)</li>
+            <li>To improve lock screen timing and accuracy</li>
+            <li>To work around manufacturer-specific restrictions (especially on Xiaomi/MIUI, Huawei, Oppo devices)</li>
+            <li>To intercept app launches before any content is visible (enhanced security)</li>
+        </ul>
+        <p><strong>How We Use This:</strong></p>
+        <ul>
+            <li>Accessibility service data is processed in <strong>real-time only</strong></li>
+            <li>Text monitoring is <strong>disabled by default</strong> and only active when parental control features are explicitly enabled</li>
+            <li>No accessibility data is stored permanently unless explicitly configured for parental controls</li>
+            <li>No data is transmitted outside your device</li>
+            <li>Window state information is used only to detect app launches</li>
+        </ul>
+
+        <h3>2.3 System Alert Window (Overlay Permission)</h3>
+        <div class="info">
+            <p><strong>Status:</strong> Required for core functionality</p>
+        </div>
+        <p><strong>What We Collect:</strong></p>
+        <ul>
+            <li><strong>No data is collected through this permission</strong></li>
+        </ul>
+        <p><strong>Why We Need This:</strong></p>
+        <ul>
+            <li>To display the lock screen overlay on top of protected apps</li>
+            <li>To show authentication prompts (PIN, pattern, biometric) when restricted apps are opened</li>
+            <li>To ensure the lock screen appears immediately and prevents any content from being visible</li>
+            <li>Required for core app locking functionality</li>
+        </ul>
+        <p><strong>How We Use This:</strong></p>
+        <ul>
+            <li>Only used to display UI elements (lock screen) on screen</li>
+            <li>No data collection or storage</li>
+            <li>No access to underlying app content</li>
+        </ul>
+
+        <h3>2.4 Notification Permission</h3>
+        <div class="info">
+            <p><strong>Status:</strong> Required (Android 13/Tiramisu and above)</p>
+        </div>
+        <p><strong>What We Collect:</strong></p>
+        <ul>
+            <li><strong>No data is collected through this permission</strong></li>
+        </ul>
+        <p><strong>Why We Need This:</strong></p>
+        <ul>
+            <li>To run the app lock service in the background</li>
+            <li>To display service status notifications</li>
+            <li>To ensure the app lock service continues working even when the app is not actively used</li>
+            <li>To notify users about app lock events (optional, can be disabled)</li>
+        </ul>
+        <p><strong>How We Use This:</strong></p>
+        <ul>
+            <li>Only used to display notifications</li>
+            <li>No data collection or storage</li>
+        </ul>
+
+        <h3>2.5 Full Screen Intent Permission</h3>
+        <div class="info">
+            <p><strong>Status:</strong> Required (Android 14/Upside Down Cake and above)</p>
+        </div>
+        <p><strong>What We Collect:</strong></p>
+        <ul>
+            <li><strong>No data is collected through this permission</strong></li>
+        </ul>
+        <p><strong>Why We Need This:</strong></p>
+        <ul>
+            <li>To display the lock screen when your device is locked</li>
+            <li>To ensure the lock screen appears immediately when you try to open a protected app, even if your device screen is off</li>
+            <li>Required for proper lock screen functionality on Android 14+</li>
+        </ul>
+        <p><strong>How We Use This:</strong></p>
+        <ul>
+            <li>Only used to display the lock screen on locked devices</li>
+            <li>No data collection or storage</li>
+        </ul>
+
+        <h3>2.6 Battery Optimization Exclusion</h3>
+        <div class="info">
+            <p><strong>Status:</strong> Required for reliable background operation</p>
+        </div>
+        <p><strong>What We Collect:</strong></p>
+        <ul>
+            <li><strong>No data is collected through this permission</strong></li>
+        </ul>
+        <p><strong>Why We Need This:</strong></p>
+        <ul>
+            <li>To ensure AppLock continues monitoring app usage in the background</li>
+            <li>To prevent the system from killing the AppLock service to save battery</li>
+            <li>To ensure the app lock service continues working when the device goes to sleep</li>
+        </ul>
+        <p><strong>How We Use This:</strong></p>
+        <ul>
+            <li>Only used to prevent system from stopping our service</li>
+            <li>No data collection or storage</li>
+        </ul>
+
+        <h3>2.7 Device Information</h3>
+        <p><strong>What We Collect:</strong></p>
+        <ul>
+            <li>Device manufacturer and model (e.g., "Samsung Galaxy S21")</li>
+            <li>Android version (e.g., "Android 13")</li>
+            <li>App installation data (package names of installed apps)</li>
+            <li>Device language and locale settings</li>
+        </ul>
+        <p><strong>Why We Need This:</strong></p>
+        <ul>
+            <li>To provide manufacturer-specific optimization guides</li>
+            <li>To ensure compatibility across different Android versions</li>
+            <li>To improve app reliability and performance</li>
+            <li>To customize user experience based on device capabilities</li>
+        </ul>
+        <p><strong>How We Use This:</strong></p>
+        <ul>
+            <li>Used locally to customize user experience</li>
+            <li>No personally identifiable information is collected</li>
+            <li>Not shared with third parties (except anonymized crash reports)</li>
+        </ul>
+
+        <h3>2.8 User Account Information (Optional)</h3>
+        <p><strong>What We Collect (if you create an account):</strong></p>
+        <ul>
+            <li>Phone number (for authentication)</li>
+            <li>Email address (optional)</li>
+            <li>User name (optional)</li>
+            <li>Access tokens and refresh tokens (for authentication)</li>
+        </ul>
+        <p><strong>Why We Need This:</strong></p>
+        <ul>
+            <li>To authenticate your identity</li>
+            <li>To enable cloud backup features (if enabled)</li>
+            <li>To enable remote management features (if enabled)</li>
+            <li>To sync settings across devices (if enabled)</li>
+        </ul>
+        <p><strong>How We Use This:</strong></p>
+        <ul>
+            <li>Stored locally on your device in encrypted format</li>
+            <li>Only transmitted to servers if you explicitly enable cloud features</li>
+            <li>Used only for authentication and account management</li>
+            <li>Never shared with third parties</li>
+        </ul>
+
+        <h3>2.9 App Lock Settings</h3>
+        <p><strong>What We Collect:</strong></p>
+        <ul>
+            <li>List of locked/protected apps (package names)</li>
+            <li>Lock method preferences (PIN, pattern, biometric)</li>
+            <li>Security settings (stealth mode, intruder selfie, auto-lock, etc.)</li>
+            <li>Unlock duration settings</li>
+            <li>App usage restrictions (daily limits, time restrictions)</li>
+            <li>Parental control settings (if enabled)</li>
+        </ul>
+        <p><strong>Why We Need This:</strong></p>
+        <ul>
+            <li>To enforce app locking functionality</li>
+            <li>To remember your security preferences</li>
+            <li>To apply usage restrictions</li>
+            <li>To enable parental control features</li>
+        </ul>
+        <p><strong>How We Use This:</strong></p>
+        <ul>
+            <li>Stored locally on your device in Android DataStore</li>
+            <li>Encrypted using Android Keystore</li>
+            <li>Never transmitted unless you enable cloud backup</li>
+        </ul>
+
+        <h3>2.10 Biometric Data</h3>
+        <div class="highlight">
+            <p><strong>Important:</strong> We do NOT collect, store, or have access to your biometric data (fingerprints, face recognition). Biometric authentication is handled entirely by the Android system and never leaves your device.</p>
+        </div>
+
+        <h2>3. Data Storage and Security</h2>
+        
+        <h3>3.1 Local Storage Only</h3>
+        <ul>
+            <li>All app lock settings are stored locally on your device using Android DataStore</li>
+            <li>App usage logs are kept in a local database</li>
+            <li>Lock screen patterns/PINs are encrypted using Android Keystore</li>
+            <li>Authentication credentials are hashed and encrypted</li>
+            <li><strong>No cloud synchronization unless you explicitly enable it</strong></li>
+        </ul>
+
+        <h3>3.2 Encryption</h3>
+        <ul>
+            <li>Authentication credentials (PIN, pattern) are encrypted using AES-256</li>
+            <li>Sensitive data uses Android Security Crypto library</li>
+            <li>Encryption keys are managed by Android Keystore (hardware-backed when available)</li>
+            <li>Biometric data is handled entirely by Android system (we never access it)</li>
+        </ul>
+
+        <h3>3.3 Data Retention</h3>
+        <table>
+            <tr>
+                <th>Data Type</th>
+                <th>Retention Period</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>App usage logs</td>
+                <td>Configurable (default: 30 days)</td>
+                <td>Can be cleared anytime from app settings</td>
+            </tr>
+            <tr>
+                <td>Lock watch logs</td>
+                <td>7 days (auto-deleted)</td>
+                <td>Diagnostic purposes only</td>
+            </tr>
+            <tr>
+                <td>Authentication data</td>
+                <td>Until manually removed</td>
+                <td>Stored until you remove or change it</td>
+            </tr>
+            <tr>
+                <td>App lock settings</td>
+                <td>Until app uninstallation</td>
+                <td>Stored locally on device</td>
+            </tr>
+            <tr>
+                <td>User account data</td>
+                <td>Until account deletion</td>
+                <td>Can be deleted anytime</td>
+            </tr>
+            <tr>
+                <td>Crash reports</td>
+                <td>90 days (anonymized)</td>
+                <td>Only if crash reporting is enabled</td>
+            </tr>
+        </table>
+
+        <h2>4. Data Sharing and Third Parties</h2>
+        
+        <div class="warning">
+            <h3>We DO NOT:</h3>
+            <ul>
+                <li>Sell your data to third parties</li>
+                <li>Share usage statistics with advertisers</li>
+                <li>Transmit app usage data to external servers (by default)</li>
+                <li>Access or store your biometric data</li>
+                <li>Share your personal information without your explicit consent</li>
+            </ul>
+        </div>
+
+        <h3>4.1 Third-Party Services</h3>
+        <p>We may use the following third-party services for app functionality:</p>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Data Shared</th>
+            </tr>
+            <tr>
+                <td>Firebase Crashlytics</td>
+                <td>Crash reporting and error tracking</td>
+                <td>Anonymized crash logs, device model, Android version</td>
+            </tr>
+            <tr>
+                <td>Firebase Performance</td>
+                <td>Performance monitoring</td>
+                <td>Anonymized performance metrics</td>
+            </tr>
+            <tr>
+                <td>Google Play Services</td>
+                <td>App updates and security</td>
+                <td>App installation data (handled by Google)</td>
+            </tr>
+        </table>
+        <p><strong>Note:</strong> You can disable crash reporting and analytics in app settings.</p>
+
+        <h3>4.2 Optional Cloud Features</h3>
+        <p>If you enable cloud backup or remote management features:</p>
+        <ul>
+            <li>Data may be transmitted to our secure servers</li>
+            <li>You will be notified and must explicitly consent</li>
+            <li>Data transmission uses encrypted HTTPS connections</li>
+            <li>You can disable cloud features at any time</li>
+            <li>All cloud data can be deleted upon request</li>
+        </ul>
+
+        <h2>5. Permissions Summary</h2>
+        <table>
+            <tr>
+                <th>Permission</th>
+                <th>Purpose</th>
+                <th>Required</th>
+                <th>Data Collected</th>
+            </tr>
+            <tr>
+                <td>Usage Statistics (PACKAGE_USAGE_STATS)</td>
+                <td>Detect when protected apps are opened</td>
+                <td>Yes</td>
+                <td>App names, timestamps, duration, launch count</td>
+            </tr>
+            <tr>
+                <td>System Alert Window (Overlay)</td>
+                <td>Display lock screen overlay</td>
+                <td>Yes</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Accessibility Service</td>
+                <td>Enhanced app detection and parental controls</td>
+                <td>Recommended</td>
+                <td>Window states, text events (only if parental control enabled)</td>
+            </tr>
+            <tr>
+                <td>Notification Permission</td>
+                <td>Background service notifications</td>
+                <td>Yes (Android 13+)</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Full Screen Intent</td>
+                <td>Display lock screen on locked devices</td>
+                <td>Yes (Android 14+)</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Battery Optimization Exclusion</td>
+                <td>Prevent service from being killed</td>
+                <td>Yes</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Biometric Authentication</td>
+                <td>Unlock with fingerprint/face</td>
+                <td>Optional</td>
+                <td>None (handled by Android system)</td>
+            </tr>
+            <tr>
+                <td>Device Admin</td>
+                <td>Enhanced security features</td>
+                <td>Optional</td>
+                <td>None</td>
+            </tr>
+        </table>
+
+        <h2>6. Your Rights and Controls</h2>
+        
+        <h3>6.1 You Can:</h3>
+        <ul>
+            <li>View all app usage logs in the app's usage statistics section</li>
+            <li>Clear all logs and data at any time from app settings</li>
+            <li>Disable parental control text monitoring</li>
+            <li>Revoke any permission through Android settings</li>
+            <li>Uninstall the app to delete all local data</li>
+            <li>Request data export (through app settings)</li>
+            <li>Disable crash reporting and analytics</li>
+            <li>Delete your account and all associated data</li>
+            <li>Opt-out of cloud backup features</li>
+        </ul>
+
+        <h3>6.2 Access Your Data:</h3>
+        <ul>
+            <li><strong>App Open Log:</strong> View in the app's diagnostic section</li>
+            <li><strong>Lock Watch Logs:</strong> View in diagnostic/logs section</li>
+            <li><strong>Usage Statistics:</strong> View in usage stats section (daily, weekly, monthly)</li>
+            <li><strong>Settings data:</strong> Accessible through app settings</li>
+            <li><strong>Locked apps list:</strong> View and manage in app lock section</li>
+        </ul>
+
+        <h2>7. Children's Privacy</h2>
+        <p>AppLock includes parental control features but is designed for use by parents/guardians, not children. We do not knowingly collect information from children under 13.</p>
+        <p>The parental control text monitoring feature:</p>
+        <ul>
+            <li>Is <strong>disabled by default</strong></li>
+            <li>Requires explicit activation by the device owner</li>
+            <li>Stores filtered text locally on the device only</li>
+            <li>Can be disabled at any time</li>
+            <li>Never transmits data to external servers</li>
+        </ul>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy to reflect:</p>
+        <ul>
+            <li>Changes in legal requirements</li>
+            <li>New features or functionality</li>
+            <li>User feedback and requests</li>
+            <li>Security improvements</li>
+        </ul>
+        <p>You will be notified of significant changes through:</p>
+        <ul>
+            <li>In-app notification</li>
+            <li>Update notes in the Play Store</li>
+            <li>Prominent display on first app launch after update</li>
+        </ul>
+        <p><strong>Last Updated:</strong> December 8, 2025</p>
+
+        <h2>9. Compliance</h2>
+        
+        <h3>9.1 GDPR (European Union)</h3>
+        <p>If you are located in the European Union, you have the following rights:</p>
+        <ul>
+            <li><strong>Right to access:</strong> Request a copy of your personal data</li>
+            <li><strong>Right to rectification:</strong> Correct inaccurate data</li>
+            <li><strong>Right to erasure:</strong> Request deletion of your data</li>
+            <li><strong>Right to data portability:</strong> Receive your data in a structured format</li>
+            <li><strong>Right to object:</strong> Object to processing of your data</li>
+            <li><strong>Right to restriction:</strong> Restrict processing of your data</li>
+        </ul>
+
+        <h3>9.2 CCPA (California)</h3>
+        <p>If you are a California resident, you have the following rights:</p>
+        <ul>
+            <li><strong>Right to know:</strong> Know what personal information is collected</li>
+            <li><strong>Right to delete:</strong> Request deletion of personal information</li>
+            <li><strong>Right to opt-out:</strong> Opt-out of sale of personal information (we don't sell data)</li>
+            <li><strong>Right to non-discrimination:</strong> Not be discriminated against for exercising your rights</li>
+        </ul>
+
+        <h3>9.3 Google Play Policy</h3>
+        <ul>
+            <li>This app complies with Google Play's User Data policies</li>
+            <li>Sensitive permissions are used only for core functionality</li>
+            <li>No deceptive or hidden data collection</li>
+            <li>All permissions are clearly explained to users</li>
+        </ul>
+
+        <h2>10. Security Measures</h2>
+        <ul>
+            <li>Local data encryption using AES-256</li>
+            <li>Android Keystore for key management (hardware-backed when available)</li>
+            <li>No plain-text storage of sensitive data</li>
+            <li>Secure deletion when data is removed</li>
+            <li>No network transmission without consent</li>
+            <li>Regular security audits and updates</li>
+            <li>HTTPS encryption for all network communications (when cloud features are enabled)</li>
+        </ul>
+
+        <h2>11. Contact Us</h2>
+        <div class="contact-info">
+            <p>For privacy-related questions, concerns, or to exercise your privacy rights:</p>
+            <p><strong>Developer:</strong> Mohsen Masoudi</p>
+            <p><strong>Email:</strong> privacy@applock.example.com</p>
+            <p><strong>Support Email:</strong> support@applock.example.com</p>
+            <p><strong>App Support:</strong> Available through Google Play Store listing</p>
+            <p><strong>Response Time:</strong> We aim to respond to privacy inquiries within 7 business days</p>
+        </div>
+
+        <h2>12. Technical Details</h2>
+        
+        <h3>12.1 Data Storage Locations</h3>
+        <ul>
+            <li><strong>Local Storage:</strong> Android DataStore (encrypted)</li>
+            <li><strong>Usage Logs:</strong> Local SQLite database</li>
+            <li><strong>Authentication:</strong> Android Keystore (hardware-backed when available)</li>
+            <li><strong>Cloud Storage:</strong> Only if you enable cloud backup (encrypted servers)</li>
+        </ul>
+
+        <h3>12.2 Data Processing</h3>
+        <ul>
+            <li>All data processing occurs on your device</li>
+            <li>No data is sent to external servers unless explicitly enabled</li>
+            <li>Real-time processing for app detection</li>
+            <li>Background processing for usage statistics</li>
+        </ul>
+
+        <div class="footer">
+            <p><strong>Version:</strong> 2.0</p>
+            <p><strong>Effective Date:</strong> December 8, 2025</p>
+            <p><strong>Last Reviewed:</strong> December 8, 2025</p>
+            <p style="margin-top: 20px;">By using AppLock, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</p>
+        </div>
+    </div>
+</body>
+</html>
+
